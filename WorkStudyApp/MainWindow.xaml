@@ -7,6 +7,52 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="28*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Left Nav Panel -->
+        <StackPanel Grid.Column="0" Margin="0"/>
+        <Rectangle Fill="DarkSeaGreen" Margin="0"/>
+
+        <!-- Main Body -->
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="672">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="187*"/>
+                <RowDefinition Height="132*"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Header -->
+            <Rectangle Fill="LightCoral" Margin="0" Grid.Row="0"/>
+            
+            <!-- Image & Stats -->
+            <Grid Margin="0" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <!-- Name & Mugshot -->
+                <Label Content="MONSTER NAME GOES HERE" Margin="0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                <Image Height="100" Margin="0" Width="100" Source="LegEater.png"/>
+                
+                <!-- Stat Block -->
+
+            </Grid>
+            
+            <!-- Elements & Move List -->
+            <Rectangle Fill="SandyBrown" Margin="0" Grid.Row="2"/>
+            
+            <!-- Footer -->
+            <Rectangle Fill="#FFB5B5F5" Margin="0" Grid.Row="3"/>
+            
+            
+            
+        </Grid>
         
+
     </Grid>
 </Window>
