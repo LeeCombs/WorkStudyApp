@@ -46,7 +46,7 @@
                 <Image Height="100" Margin="0,20,0,0" Width="100" Source="LegEater.png" Stretch="None"/>
 
                 <!-- Stat Block -->
-                <Grid Grid.Column="1">
+                <Grid Grid.Column="1" VerticalAlignment="Center">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
@@ -54,20 +54,20 @@
 
                     <!-- Stats Column 1 -->
                     <StackPanel Margin="0,35,0,0">
-                        <Label Content="HP: 6" VerticalAlignment="Center"/>
-                        <Label Content="STR: 6" VerticalAlignment="Center"/>
-                        <Label Content="DEF: 6" VerticalAlignment="Center"/>
-                        <Label Content="HITS: 6" VerticalAlignment="Center"/>
-                        <Label Content="RUN: 6" VerticalAlignment="Center"/>
+                        <Label Content="HP: 6"/>
+                        <Label Content="STR: 6"/>
+                        <Label Content="DEF: 6"/>
+                        <Label Content="HITS: 6"/>
+                        <Label Content="RUN: 6"/>
                     </StackPanel>
 
                     <!-- Stats Column 2 -->
                     <StackPanel Margin="0,35,0,0" Grid.Column="1">
-                        <Label Content="EVA: 6" VerticalAlignment="Center"/>
-                        <Label Content="MDEF: 6" VerticalAlignment="Center"/>
-                        <Label Content="GOLD: 6" VerticalAlignment="Center"/>
-                        <Label Content="XP: 6" VerticalAlignment="Center"/>
-                        <Label Content="ACC: 6" VerticalAlignment="Center"/>
+                        <Label Content="EVA: 6"/>
+                        <Label Content="MDEF: 6"/>
+                        <Label Content="GOLD: 6"/>
+                        <Label Content="XP: 6"/>
+                        <Label Content="ACC: 6"/>
                     </StackPanel>
                 </Grid>
 
@@ -77,19 +77,20 @@
             <Grid Margin="0" Grid.Row="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="4*" />
                 </Grid.ColumnDefinitions>
 
                 <!-- Elements etc. -->
-                <StackPanel>
-                    <Label Content="Race: Earth" VerticalAlignment="Center"/>
-                    <Label Content="Resistances: Earth" VerticalAlignment="Center"/>
-                    <Label Content="Absorbs: Earth" VerticalAlignment="Center"/>
-                    <Label Content="Weaknesses: Earth" VerticalAlignment="Center"/>
+                <StackPanel Margin="0,0,5,0" VerticalAlignment="Center">
+                    <Label Content="Family:" HorizontalContentAlignment="Right"/>
+                    <Label Content="Resistances:" HorizontalContentAlignment="Right"/>
+                    <Label Content="Absorbs:" HorizontalContentAlignment="Right"/>
+                    <Label Content="Weaknesses:" HorizontalContentAlignment="Right"/>
                 </StackPanel>
 
                 <!-- Move List -->
-                <Grid Grid.Column="1">
+                <Grid Grid.Column="2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
@@ -100,13 +101,13 @@
                     </Grid.RowDefinitions>
 
                     <Label Grid.ColumnSpan="2" Content="Move List" FontWeight="Bold" HorizontalContentAlignment="Center"/>
-                    <TextBlock Grid.Row="1" TextWrapping="Wrap" >
+                    <TextBlock Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" >
                         <Run Text="1"/><LineBreak/>
                         <Run Text="2"/><LineBreak/>
                         <Run Text="3"/><LineBreak/>
                         <Run Text="4"/>
                     </TextBlock>
-                    <TextBlock Grid.Row="1"  Grid.Column="1" TextWrapping="Wrap">
+                    <TextBlock Grid.Row="1"  Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center">
                         <Run Text="5"/><LineBreak/>
                         <Run Text="6"/><LineBreak/>
                         <Run Text="7"/><LineBreak/>
